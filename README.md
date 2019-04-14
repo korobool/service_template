@@ -54,7 +54,7 @@ npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
 ```
 
 ### 10. Create a file named *webpack.config.js* and fill it like the following:
-```json
+```
 module.exports = {
   module: {
     rules: [
