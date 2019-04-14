@@ -54,7 +54,7 @@ npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
 ```
 
 ### 10. Create a file named *webpack.config.js* and fill it like the following:
-```
+```json
 module.exports = {
   module: {
     rules: [
@@ -91,7 +91,7 @@ npm i html-webpack-plugin html-loader --save-dev
 ```
 
 ### 15. Update the webpack configuration.
-```
+```json
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 module.exports = {
   module: {
@@ -287,6 +287,21 @@ app.router.add_static('/', path='./static/dist')
 loop.run_until_complete(init(loop))
 ```
 
+### 26. Run docker container with rabbit. 
+```bash
+docker run -d --hostname my-rabbit --name some-rabbit -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+```
+
+### 27. Run *endpoint.py*.
+```bash
+python endpoint.py
+```
+
+### 28. You can see the page in your browser
+```
+http://localhost:8080/app
+```
+
 ## The resulting *package.json* file content:
 ```json
 {
@@ -330,4 +345,5 @@ loop.run_until_complete(init(loop))
 [Getting Started with React, Webpack and Bootstrap](https://medium.com/@dinyangetoh/getting-started-with-react-webpack-and-bootstrap-27e95ff634ef)
 
 [Tutorial: How to set up React, webpack, and Babel 7 from scratch (2019)](https://www.valentinog.com/blog/react-webpack-babel/)
+
 
