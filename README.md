@@ -91,7 +91,7 @@ npm i html-webpack-plugin html-loader --save-dev
 ```
 
 ### 15. Update the webpack configuration.
-```json
+```
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 module.exports = {
   module: {
